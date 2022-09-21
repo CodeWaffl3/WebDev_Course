@@ -1,0 +1,10 @@
+.white_box {
+    background-color: white;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+}
+
+body {
+    background-color: black;
+}

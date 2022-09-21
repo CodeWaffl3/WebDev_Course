@@ -1,0 +1,11 @@
+.nav-link-up{
+    font-size: 30px !important;
+}
+
+.row{
+    background-color: gainsboro;
+}
+
+.container, .row, .row div{
+    border: 2px solid black;    
+}
