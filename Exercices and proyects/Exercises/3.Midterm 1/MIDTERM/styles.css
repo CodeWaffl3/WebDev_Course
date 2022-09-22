@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 
+
 .flex-container{
     display: flex;
     background-color: DodgerBlue;
@@ -82,4 +83,10 @@ button {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+.button_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
