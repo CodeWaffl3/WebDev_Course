@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+
+.flex-container{
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+footer {
+    background-color: lightgray;
+}
+
+body {
+    background-image: url(/Resources/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    background-size: 100% 25%;
+    font-family: "Bai jamjuree",sans-serif;
+}
+
+.header_center {
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    padding-top:200px;
+    display: flex;
+    height: 150px;
+    width: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.smaller_logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+}
+
+.center_p{
+    text-align: center;
+    color: grey;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    font-family:"Bai jamjuree",sans-serif;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 3px #229f89;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px  #229f89;
+    transform: translateY(4px);
+}
+
+.button:hover {opacity: 0.9;}
+
+
+.inline{
+    position: relative;
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Find Next Prime Number</title>
+
+    <script type="text/javascript">
+        function checkPrime() {
+            var text_box = document.getElementById("num"); // Ww set this to use the variable instead of all the code everytime we want to change the value
+            var number = parseInt (document.getElementById("num").value); 
+            var maxNum = parseInt(1299827);
+            if(number < maxNum && !isNaN(number)) {
+                for(var i = number+1; i< maxNum; i++) {
+                    if (isPrime(i)) {
+                        var item = document.createElement("li");
+                        document.getElementById("result").appendChild(item);
+                        item.innerHTML = i + " is the next prime after " + number;
+                        text_box.value=""; 
+                        break;
+                    }
+                }
+            } 
+            else {
+                window.alert("Please Enter Number Below 1299827 or Enter A Valid Integer");
+                text_box.value = "";
+            }
+        }
+        function isPrime(num) {
+            for(var i = 2; i < num; i++ ) {
+                if(num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<form id="form1" runat="server">
+    <div>
+        <input type="text" id="num" />
+        <button id="btn" onclick="checkPrime();return false">
+            Click To Get Next Prime Number</button>
+        <ol id="result"></ol>
+    </div>
+</form>
+</body>
+</html>

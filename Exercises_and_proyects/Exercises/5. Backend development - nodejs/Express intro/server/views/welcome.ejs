@@ -1,0 +1,25 @@
+<%- include("partials/header"); -%>
+    <form action="/welcome" method="get">
+    </form>
+    <form action="/ejsWelcome" method="post">
+        <h3>Secure Version</h3>
+        <input type="text" id="name" name="name" />
+        <br>
+        <input type="submit">
+    </form>
+    <a href="/welcome/Gabriel">Say hello Gabriel</a>
+    <a href="welcome/Jose">Say hello Jose</a>
+    <form action="/addLink" method="post">
+        <h3>Add elemts to list</h3>
+        <input type="text" id="item" name="item">
+        <br>
+        <input type="submit">
+    </form>
+    <ul>
+        <% items.forEach(function(item){ %>
+            <li>
+                <%= item %>
+            </li>
+            <% }) %>
+    </ul>
+    <%- include("partials/footer"); %>

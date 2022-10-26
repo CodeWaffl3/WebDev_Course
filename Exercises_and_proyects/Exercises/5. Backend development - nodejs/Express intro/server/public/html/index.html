@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    This is static content from my express project
+    <div class="content">
+        <form action="/welcome" method="get">
+            <input type="text" id="name" name="name">
+            <br>
+            <input type="submit">
+        </form>
+        <form action="/ejsWelcome" method="post">
+            <h3>Secure Version</h3>
+            <input type="text" id="name" name="name">
+            <br>
+            <input type="submit">
+        </form>
+        <a href="/welcome/Gabriel">Say hello to Gabriel</a>
+        <br>
+        <a href="/welcome/Gabriel">Say hello to Pedro</a>
+        <form action="text" method="post">
+            <h3>Add elements to list</h3>
+            <input type="text" id="item" name="item"/>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
