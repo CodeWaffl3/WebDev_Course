@@ -1,6 +1,22 @@
 <%- include("partials/header"); -%>
+
     <form action="/welcome" method="get">
     </form>
+
+<form action="/car" method="post">
+    <h3>Cars</h3>
+
+    <label for="carName">Name :</label>
+    <input type="text" id="carName" name="carName"/>
+
+    <label for="carModel"></label>
+    <input type="text" id="carModel" name="carModel">
+
+    <label for="carComment"></label>
+    <input type="text" id="carComment" name="carComment">
+
+</form>
+
     <form action="/ejsWelcome" method="post">
         <h3>Secure Version</h3>
         <input type="text" id="name" name="name" />

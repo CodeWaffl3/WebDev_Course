@@ -1,0 +1,14 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.profile {
+    border: 4px solid black;
+    border-radius: 50%;
+    width: 90%;
+    height: auto;
+}

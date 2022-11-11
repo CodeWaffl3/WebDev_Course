@@ -2,6 +2,18 @@ const express = require("express");
 const app = express();
 const https = require("https");
 
+//MONGODB USAGE
+const mongoose = require("mongoose");
+const mongoUrl = "mongodb://localhost:27017/firstTest";
+
+mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true});
+const carSchema = new mongoose.Schema({
+	name: String,
+	model: Number,
+	comment: String
+});
+
+const carModel = mongoose.model("Car", carSchema);
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -20,6 +32,18 @@ app.get('/',(req,res) =>{
 	//res.render("welcome",{items: items});
 });
 
+app.post('/car',(req,res)=>{
+	var carName = req.body.carName;
+	var carModel = req.body.carModel;
+	var carComment = req.body.carComment;
+
+	var car = new Car({
+		name: carName,
+		model: carModel,
+		comment:carComment
+	})
+	res.send("Succes saved car:" + carName);
+});
 
 app.get('/students',(req,res) =>{
 	var name = req.body.name;
