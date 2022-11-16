@@ -1,0 +1,11 @@
+.logForm{
+    display: flex;
+    height: 30px;
+    background-color: blue;
+    justify-content: right;
+}
+
+.input{
+    margin-right: 10px;
+
+}

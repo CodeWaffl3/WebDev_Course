@@ -11,12 +11,12 @@ const contacts = [
     },
     {
         name: "Peregrin Tuk",
-        img:"http://picsum.photos",
+        img:"http://picsum.photos/200",
         adress: ""
     },
     {
         name: "Meriadoc Brandybuck",
-        img: "TODO",
+        img: "http://picsum.photos/200",
         adress:""
     }
 ];
