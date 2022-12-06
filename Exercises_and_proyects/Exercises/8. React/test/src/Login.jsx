@@ -3,8 +3,8 @@ import './LogIn.css'
 
 function Login(props) {
     return (
-        <div>
-            <form className="logForm">
+        <div className="logForm">
+            <form>
                 <input className='input' type="text" placeholder="Username"
                        onChange={props.userNameHandler}/>
                 <input className='input' type="text" placeholder="Password"

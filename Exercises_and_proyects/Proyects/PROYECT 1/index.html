@@ -1,53 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GArt Gallery</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>GArtGallery</title>
+    <script src="https://kit.fontawesome.com/44de1043d0.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
 </head>
-
-
 <body>
-    <!--BOOTSRAP SCRIPT LINK-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-    <!-------------------------START OF CODE------------------------------------------>
-
-    <!--Bostrap Navbar-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">GArtGallery</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Auctions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
-              </li>
-            </ul>
-          </div>
+    <h1 class="title">GART GALLERY</h1>
+    <section class="artSection">
+        <h1>Auctions</h1>
+        <div class="artDisplay">
+            <img src="./images/aboutus.jpg" alt="">
+            <img src="./images/aboutus.jpg" alt="">
+            <img src="./images/aboutus.jpg" alt="">
+            <img src="./images/aboutus.jpg" alt="">
+            <img src="./images/aboutus.jpg" alt="">
         </div>
-      </nav>
 
-    <!--Carrousel-->
+    </section>
 
-    <p>Hoal buenas tardes
-    </p>
+    <section class="aboutUs">
+        <h1>About us</h1>
+        <p>We are an auction company that sells new modern Art.
+        We want to make new artist's known and give value to one of each of them
+        Selling their art as copies at an affordable price, and
+        the original art as a valuable token.
+        </p>
+        <img src="./images/aboutus.jpg" alt="">
+    </section>
 
-    <!--Comunity section-->
 
-    <!--FOOTER-->
-
-
+    <footer>
+        <div class="contactForm">
+            <p><i class="fa-solid fa-phone"></i> 12 3123 1231</p>
+            <p><i class="fa-solid fa-inbox"></i> sample@email.com</p>
+            <p><i class="fa-brands fa-linkedin"></i> Gabriel Cardenas</p>
+        </div>
+        <div class="socials">
+            <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+            <p><a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+            <p><a href="https://github.com/CodeWaffl3/WebDev_Course.git"><i class="fa-brands fa-github"></i> Github</a></p>
+        </div>
+    </footer>
 </body>
 </html>

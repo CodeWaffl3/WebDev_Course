@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Sampler from "./sampler";
 import LogIn from "./Login"
+import axios from "axios";
 
 function App() {
   function createContent(){
@@ -13,11 +14,33 @@ function App() {
   const [userName,setUserName] = useState("");
   const [password,setPassword] = useState("");
 
-  function logMeIn(){
-    if (userName === "admin" && password==="password") {
-      setIsLoggedIn(true);
-    }
+  function logMeIn(event){
+    event.preventDefault();
+/*    axios
+        .get('/login')
+        .then(res => {
+          var data = res.data;
+          if (!data.hasOwnProperty("error")) {
+            setIsLoggedIn(true);
+
+          }
+        })
+        .catch(error => {
+      console.log(error.error);
+    });*/
+      axios
+          .post('/login', {user: userName, password: password})
+          .then(res => {
+              var data = res.data;
+              if (!data.hasOwnProperty("error")) {
+                  setIsLoggedIn(true);
+              }
+          })
+          .catch(error => {
+              console.log(error.error);
+    });
   }
+
   function logOut(){
     setIsLoggedIn(false);
     setUserName("");
